@@ -22,8 +22,6 @@ remote_theme: pmarsceill/just-the-docs
 color_scheme: "dark"
 search_enabled: true
 search_tokenizer_separator: /[\s/]+/
-plugins:
- - jekyll-remote-theme
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
