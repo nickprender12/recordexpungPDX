@@ -11,8 +11,8 @@ nav_order: 1
 
 * Project Manager: Nick Schimek
 * Project Designer: Hunter Marcks
-* Front-End Lead Developer: Erik Jasso
-* Back-End Lead Developer: Max Wallace
+* Lead Back-End Developer: Erik Jasso
+* Lead Front-End Developer: Max Wallace
 * Lead Docker Developer: Jordan Witte
 
 ***

@@ -6,9 +6,9 @@ layout: home
 ---
 
 # [](#welcome)Welcome
-Welcome to the Record Expungement documentation site.
+This is the documentation site for the codeforpdx record expungement project.
 
-This site is currently in its infancy, however all documentation is currently in the process of being consolidated here.
+All documentation is currently being consolidated to this site. Please be patient.
 
 If you would like to contribute great!
 
