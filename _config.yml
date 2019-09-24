@@ -20,7 +20,8 @@ title: PDX Record Expungment docs
 theme: "just-the-docs"
 remote_theme: pmarsceill/just-the-docs
 color_scheme: "dark"
-search_enabled: false
+search_enabled: true
+search_tokenizer_separator: /[\s/]+/
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
