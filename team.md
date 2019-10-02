@@ -16,10 +16,10 @@ nav_order: 1
 
 ***
 
-| Back End     | Front End           |
-|:-------------|:--------------------|
-| Adam Holm    | Forrest Longanecker |
-| Adam Emrich  | Olli Nieminen       |
-| Eric Jasso   | Chris Breax         |
+| Back End     | Front End           | Dev Ops             |
+|:-------------|:--------------------|:--------------------|
+| Adam Holm    | Forrest Longanecker | Matt Rosanio        |
+| Adam Emrich  | Olli Nieminen       |                     |
+| Eric Jasso   | Chris Breax         |                     |
 
 Please help keep this updated by editing this file here [team.md](https://github.com/codeforpdx/recordexpungPDX/blob/gh-pages/team.md)
