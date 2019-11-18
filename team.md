@@ -12,7 +12,6 @@ nav_order: 1
 * Project Manager: Nick Schimek
 * Project Designer: Hunter Marcks
 * Lead Back-End Developer: Jordan Witte
-* Lead Front-End Developer: Max Wallace
 
 ***
 
@@ -21,5 +20,6 @@ nav_order: 1
 | Adam Holm    | Forrest Longanecker | Matt Rosanio        |
 | Adam Emrich  | Olli Nieminen       |                     |
 | Eric Jasso   | Chris Breax         |                     |
+|              | Max Wallace         |                     |
 
 Please help keep this updated by editing this file here [team.md](https://github.com/codeforpdx/recordexpungPDX/blob/gh-pages/team.md)
