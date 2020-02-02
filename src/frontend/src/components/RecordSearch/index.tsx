@@ -11,9 +11,11 @@ interface Props {
 
 interface State {
   firstName: string;
+  middleName: string;
   lastName: string;
   dateOfBirth: string;
   firstNameHasInput: boolean;
+  middleNameHasInput: boolean;
   lastNameHasInput: boolean;
   missingInputs: null | boolean;
   invalidDate: boolean;
@@ -22,9 +24,11 @@ interface State {
 class RecordSearch extends React.Component<Props, State> {
   state: State = {
     firstName: '',
+    middleName: '',
     lastName: '', // Validation check relies on string length.
     dateOfBirth: '', // Moment expects a string to be passed in as a paramenter in the validateForm function.
     firstNameHasInput: false, // Initially set to false to ensure aria-invalid attribute is rendered.
+    middleNameHasInput: false,
     lastNameHasInput: false,
     missingInputs: null,
     invalidDate: false
@@ -48,9 +52,10 @@ class RecordSearch extends React.Component<Props, State> {
         // Dispatch an action.
         let state = this.state;
         let firstName = state.firstName;
+        let middleName = state.middleName;
         let lastName = state.lastName;
         let dateOfBirth = state.dateOfBirth.length > 0 ? state.dateOfBirth : '';
-        this.props.fetchRecords(firstName, lastName, dateOfBirth);
+        this.props.fetchRecords(firstName, middleName, lastName, dateOfBirth);
       }
     });
   };
@@ -60,9 +65,11 @@ class RecordSearch extends React.Component<Props, State> {
       this.setState(
         {
           firstNameHasInput: this.state.firstName.trim().length === 0,
+          middleNameHasInput: this.state.middleName.trim().length === 0,
           lastNameHasInput: this.state.lastName.trim().length === 0,
           missingInputs:
             this.state.firstName.trim().length === 0 ||
+            this.state.middleName.trim().length === 0 ||
             this.state.lastName.trim().length === 0,
           invalidDate:
             moment(this.state.dateOfBirth, 'M/D/YYYY', true).isValid() ===
@@ -82,7 +89,7 @@ class RecordSearch extends React.Component<Props, State> {
             <div className="w-100 w-30-ns mb3 pr2-ns">
               <label htmlFor="firstName" className="db mb1 fw6">
                 First Name
-              </label>
+                </label>
               <input
                 id="firstName"
                 type="text"
@@ -92,6 +99,22 @@ class RecordSearch extends React.Component<Props, State> {
                   this.state.firstNameHasInput ? 'name_msg' : undefined
                 }
                 aria-invalid={this.state.firstNameHasInput}
+                onChange={this.handleChange}
+              />
+            </div>
+            <div className="w-100 w-30-ns mb3 pr2-ns">
+              <label htmlFor="middleName" className="db mb1 fw6">
+                Middle Name
+              </label>
+              <input
+                id="middleName"
+                type="text"
+                className="w-100 pa3 br2 b--black-20"
+                required
+                aria-describedby={
+                  this.state.middleNameHasInput ? 'name_msg' : undefined
+                }
+                aria-invalid={this.state.middleNameHasInput}
                 onChange={this.handleChange}
               />
             </div>
